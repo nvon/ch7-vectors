@@ -7,13 +7,13 @@ first.ten <- 10:20
 next.ten <- seq(21,30)
 
 # Create a vector `all.numbers` by combining the vectors `first.ten` and `next.ten`
-all.numbers <- cat(first.ten,next.ten)
+all.numbers <- c(first.ten,next.ten)
 
 # Create a variable `eleventh` that is equal to the 11th element in your vector `all.numbers`
-
+eleventh <- all.numbers[[11]]
 
 # Create a vector `some.numbers` that is equal to the second through the 5th elements of `all.numbers`
-
+some.numbers <- all.numbers[2:5]
 
 # Create a variable `len` that is equal to the length of your vector `all.numbers`
 
