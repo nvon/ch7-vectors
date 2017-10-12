@@ -13,7 +13,7 @@ z <- x+y
 
 ## Create a vector `first.three` that has the first three elements of `z` in it.
 ## Use (positional) indexing!
-first.three <- 
+first.three <- z[c(1:3)]
 
 ## Create a vector `small` that has the values of `z` that are less than 5
 ## Use logical indexing! http://www.r-tutor.com/r-introduction/vector/logical-index-vector
