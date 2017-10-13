@@ -32,18 +32,32 @@ if (marbleGuess == rollMarble){
 
 
 # Bonus: Play the marble game until you win, keeping track of how many tries you take
+MarbleGame <- function(marbleGuess, rollMarble, triesTotal){
+rollMarble <- sample(marbles, 1, replace = TRUE, prob = NULL)
+if (marbleGuess == rollMarble){
+  cat("You guessed" marbleGuess "and the color matched! YOU WON")
+  triesTotal ++
+} else {
+  cat ("You guessed" marbleGuess "but the color didn't match! YOU LOST")
+  triesTotal ++
+}
+  return cat("You tried" triesTotal "times!"
 
+  
 
 ## Double bonus(answer not provided): play the game 1000X (until you win) and track the average number of
 ## tries
-MarbleGame <- function(marbleGuess, rollMarble){
+MarbleGame <- function(marbleGuess, rollMarble, triesTotal){
 rollMarble <- sample(marbles, 1, replace = TRUE, prob = NULL)
 for(i = 1:1000) {
   if (marbleGuess == rollMarble){
     cat("You guessed" marbleGuess "and the color matched! YOU WON")
+    triesTotal ++
   } else {
     cat ("You guessed" marbleGuess "but the color didn't match! YOU LOST")
+    triesTotal ++
   }
+  return cat("You tried" triesTotal "times!")
 }
 
 ## Is it what you expected based on the probability?
