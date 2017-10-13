@@ -15,7 +15,7 @@ sample(marbles, 1, replace = TRUE, prob = NULL)
 # - Randomly samples a marble
 # - Returns whether or not the person guessed accurately (preferrably a full phrase)
 
-marbleGuess <- ## put  c("name of color") in marble color here???
+marbleGuess <- c("purple")
   
 marbles <- c("red", "yellow", "blue", "green", "orange", "purple")
 
