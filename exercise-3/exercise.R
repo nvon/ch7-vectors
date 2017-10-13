@@ -15,6 +15,18 @@ sample(marbles, 1, replace = TRUE, prob = NULL)
 # - Randomly samples a marble
 # - Returns whether or not the person guessed accurately (preferrably a full phrase)
 
+marbleGuess <- ## put in marble color here
+  
+marbles <- c("red", "yellow", "blue", "green", "orange", "purple")
+rollMarble <- sample(marbles, 1, replace = TRUE, prob = NULL)
+
+## to continue 1000 times: for(i = 1:1000)
+if (marbleGuess == rollMarble){
+  cat("You guessed" marbleGuess "and the color matched! YOU WON")
+} else {
+  cat ("You guessed" marbleGuess "but the color didn't match! YOU LOST")
+}
+
 
 # Play the marble game!
 
